@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_empty_rate"
+        android:layout_width="match_parent"
+        android:layout_height="123dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="该商品暂无评论"
+            android:textColor="#888888"
+            android:textSize="13sp" />
+    </LinearLayout>
+</LinearLayout>

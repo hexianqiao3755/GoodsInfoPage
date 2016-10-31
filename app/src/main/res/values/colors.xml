@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ec0f38</color>
+    <color name="colorPrimaryDark">#ec0f38</color>
+    <color name="colorAccent">#ec0f38</color>
+
+    <color name="app_bg">#eeeff3</color>
+    <color name="theme">@color/red</color>
+    <color name="theme_red">@color/red</color>
+    <color name="theme_white">@color/white</color>
+    <color name="gray_light">#EBEBEB</color>
+    <color name="gray_line">#dddddd</color>
+    <color name="hint_text">#B9BABB</color>
+    <color name="small_goods_price">#FF8C69</color>
+    <color name="title_black_color">#333333</color>
+    <color name="text_red">#ec0f38</color>
+    <color name="text_gray">#888888</color>
+    <color name="text_black">#222222</color>
+    <color name="price_red">#ff3346</color>
+    <color name="bg_gray">#f1f1f1</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="red">#ec0f38</color>
+    <color name="blue">#0000FF</color>
+    <color name="gray">#7f7f7f</color>
+    <color name="orange">#ff7f66</color>
+</resources>
