@@ -34,13 +34,6 @@ public class ItemWebView extends WebView {
                 float Y = ev.getY();
                 float Ys = Y - oldY;
                 float X = ev.getX();
-                float gapHorizontal = X - oldX;
-                /** 说明:
-                 *如果是横向移动,就让父控件重新获得触摸事件
-                 */
-                if (Math.abs(gapHorizontal) > 120) {
-                    //getParent().getParent().requestDisallowInterceptTouchEvent(false);
-                }
 
                 //滑动到顶部让父控件重新获得触摸事件
                 if (Ys > 0 && t == 0) {

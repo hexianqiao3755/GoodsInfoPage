@@ -22,14 +22,15 @@
                 android:scrollbars="vertical">
 
                 <LinearLayout
-                    android:background="#eeeff3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:background="#eeeff3"
                     android:orientation="vertical">
 
                     <FrameLayout
                         android:layout_width="match_parent"
-                        android:layout_height="203dp">
+                        android:layout_height="203dp"
+                        android:background="@color/white">
 
                         <!-- 自动轮播的第三方控件 -->
                         <com.bigkoo.convenientbanner.ConvenientBanner xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -88,8 +89,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="3dp"
-                                android:textColor="#ec0f38"
                                 android:text="599"
+                                android:textColor="#ec0f38"
                                 android:textSize="21sp"
                                 android:textStyle="bold" />
 
@@ -99,8 +100,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="7dp"
                                 android:gravity="center_vertical"
-                                android:textColor="#888888"
                                 android:text="￥799"
+                                android:textColor="#888888"
                                 android:textSize="13sp" />
 
                         </LinearLayout>
@@ -133,9 +134,9 @@
                         android:id="@+id/ll_current_goods"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@color/white"
                         android:paddingBottom="15dp"
                         android:paddingLeft="12dp"
-                        android:background="@color/white"
                         android:paddingRight="12dp"
                         android:paddingTop="15dp">
 
@@ -152,8 +153,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="20dp"
-                            android:text="黑色, 1件"
                             android:layout_weight="1"
+                            android:text="黑色, 1件"
                             android:textColor="#222222"
                             android:textSize="14sp" />
 

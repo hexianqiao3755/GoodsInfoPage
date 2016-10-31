@@ -7,7 +7,7 @@ import android.widget.AbsListView;
 import android.widget.ListView;
 
 /**
- * item页底部的ListView
+ * 商品详情页底部的ListView
  */
 public class ItemListView extends ListView implements AbsListView.OnScrollListener {
     private float oldX, oldY;
@@ -36,15 +36,8 @@ public class ItemListView extends ListView implements AbsListView.OnScrollListen
                 float Y = ev.getY();
                 float Ys = Y - oldY;
                 float X = ev.getX();
-                float gapHorizontal = X - oldX;
                 int [] location = new int [2];
                 getLocationInWindow(location);
-                /** 说明:
-                 *如果是横向移动,就让父控件重新获得触摸事件
-                 */
-                if (Math.abs(gapHorizontal) > 120) {
-                    //getParent().getParent().requestDisallowInterceptTouchEvent(false);
-                }
 
                 //滑动到顶部让父控件重新获得触摸事件
                 if (Ys > 0 && currentPosition == 0) {

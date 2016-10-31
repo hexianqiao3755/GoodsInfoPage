@@ -68,7 +68,6 @@
                     android:visibility="gone" />
             </LinearLayout>
         </LinearLayout>
-
     </LinearLayout>
 
     <com.hq.hsmwan.widget.NoScrollViewPager
