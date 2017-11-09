@@ -28,6 +28,37 @@ public class ItemListView extends ListView implements AbsListView.OnScrollListen
         setOnScrollListener(this);
     }
 
+    @Override
+    public boolean onInterceptTouchEvent(MotionEvent ev) {
+        switch (ev.getAction()) {
+            case MotionEvent.ACTION_MOVE:
+                float Y = ev.getY();
+                float Ys = Y - oldY;
+                float X = ev.getX();
+                int[] location = new int[2];
+                getLocationInWindow(location);
+
+                //滑动到顶部让父控件重新获得触摸事件
+                if (Ys > 0 && currentPosition == 0) {
+                    getParent().getParent().requestDisallowInterceptTouchEvent(false);
+                }
+                break;
+
+            case MotionEvent.ACTION_DOWN:
+                getParent().getParent().requestDisallowInterceptTouchEvent(true);
+                oldY = ev.getY();
+                oldX = ev.getX();
+                break;
+
+            case MotionEvent.ACTION_UP:
+                getParent().getParent().requestDisallowInterceptTouchEvent(true);
+                break;
+
+            default:
+                break;
+        }
+        return super.onInterceptTouchEvent(ev);
+    }
 
     @Override
     public boolean onTouchEvent(MotionEvent ev) {
@@ -36,7 +67,7 @@ public class ItemListView extends ListView implements AbsListView.OnScrollListen
                 float Y = ev.getY();
                 float Ys = Y - oldY;
                 float X = ev.getX();
-                int [] location = new int [2];
+                int[] location = new int[2];
                 getLocationInWindow(location);
 
                 //滑动到顶部让父控件重新获得触摸事件
