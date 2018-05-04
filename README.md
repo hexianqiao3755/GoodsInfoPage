@@ -119,7 +119,7 @@ dependencies {
  *  防止往上滑动时会直接滑动到第一个`View`
  * 实现滑动到`WebView`顶部时, 让父控件重新获得触摸事件
  
-![效果实现](https://github.com/hexianqiao3755/GoodsInfoPage/blob/master/art/itemWebView.jpeg)
+![效果实现](https://github.com/hexianqiao3755/GoodsInfoPage/blob/master/art/itemWebView.png)
 ```
 /**
  * 商品详情页底部的webview
@@ -319,7 +319,7 @@ public class NoScrollViewPager extends ViewPager {
 - `SlideDetailsLayout`内容有两个`View`,  `mFrontView`(第一个`View`)和`mBehindView`(第二个`View`)
 - 有两种状态, 状态设置为**close**就显示第一个商品数据`View`, **open**状态就显示第二个图文详情`View`
 
-![效果实现](https://github.com/hexianqiao3755/GoodsInfoPage/blob/master/art/slideDetailsLayout.jpeg)
+![效果实现](https://github.com/hexianqiao3755/GoodsInfoPage/blob/master/art/slideDetailsLayout.png)
 ```
 @SuppressWarnings("unused")
 public class SlideDetailsLayout extends ViewGroup {
