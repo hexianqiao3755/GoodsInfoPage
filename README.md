@@ -118,7 +118,8 @@ dependencies {
  * 功能为显示商品简介的`Webview`
  *  防止往上滑动时会直接滑动到第一个`View`
  * 实现滑动到`WebView`顶部时, 让父控件重新获得触摸事件
-
+ 
+![效果实现](https://github.com/hexianqiao3755/GoodsInfoPage/blob/master/art/itemWebView.jpeg)
 ```
 /**
  * 商品详情页底部的webview
@@ -181,9 +182,11 @@ public class ItemWebView extends WebView {
 }
 ```
 
-##### ItemListView 也是`SlideDetailsLayout`的子View
+##### ItemListView 也是`SlideDetailsLayout`的子View 
  * 跟 `ItemWebView`功能大致一样
  * 当然这里不只是`ListView`可以, 其他的控件都可以写成这样来适配`SlideDetailsLayout`的滑动功能
+ 
+![效果实现](https://github.com/hexianqiao3755/GoodsInfoPage/blob/master/art/itemListView.png)
 
 ```
 /**
@@ -257,6 +260,7 @@ public class ItemListView extends ListView implements AbsListView.OnScrollListen
  * 当滑动到图文详情模块时, 能禁止掉`ViewPager`的滑动事件
  *  大概意思就是**滑动跟到了图文详情时不能直接向右滑动的方式切换到详情和评价模块**(参照京东淘宝功能)
 
+![效果实现](https://github.com/hexianqiao3755/GoodsInfoPage/blob/master/art/noScrollViewPager.png)
 ```
 /**
  * 提供禁止滑动功能的自定义ViewPager
@@ -311,10 +315,11 @@ public class NoScrollViewPager extends ViewPager {
 }
 ```
 
-*  ###商品模块最外层的布局是一个自定义的ViewGroup名为`SlideDetailsLayout`
-`SlideDetailsLayout`内容有两个`View`,  `mFrontView`(第一个`View`)和`mBehindView`(第二个`View`)
-有两种状态, 状态设置为**close**就显示第一个商品数据`View`, **open**状态就显示第二个图文详情`View`
+##### 商品模块最外层的布局是一个自定义的ViewGroup名为`SlideDetailsLayout`
+- `SlideDetailsLayout`内容有两个`View`,  `mFrontView`(第一个`View`)和`mBehindView`(第二个`View`)
+- 有两种状态, 状态设置为**close**就显示第一个商品数据`View`, **open**状态就显示第二个图文详情`View`
 
+![效果实现](https://github.com/hexianqiao3755/GoodsInfoPage/blob/master/art/slideDetailsLayout.jpeg)
 ```
 @SuppressWarnings("unused")
 public class SlideDetailsLayout extends ViewGroup {
